@@ -16,7 +16,17 @@ html {
 }
 section{
   width: 90%;
-  margin: 0 auto;
+  margin:0 auto;
+}
+
+.pt-7{
+    padding-top: 5rem;
+}
+.pb-7{
+    padding-bottom: 5rem;
+}
+.py-7{
+    padding: 5rem 0;
 }
 .section-sm{
     min-height: 100vh;
@@ -33,7 +43,7 @@ section{
   left: 0;
   width: 100%;
  z-index: 99;
- padding: 3rem 2rem;
+ padding: 2rem 2rem;
 background: #fff;
 box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
@@ -70,7 +80,20 @@ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 .display-sm{
     display: none;
 }
+.wth-md{
+    width: 50%;
+    margin: 0 auto;
+}
 
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.box-item{
+    flex-grow: 1;
+    flex-basis: 200;
+}
 
   /* meadia query */
   @media (max-width: 768px){
@@ -111,6 +134,9 @@ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
     .display-md{
         display: none !important;
+    }
+    .wth-md{
+        width: 100%;
     }
     
 }
