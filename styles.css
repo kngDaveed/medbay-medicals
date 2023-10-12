@@ -18,6 +18,10 @@ section{
   width: 90%;
   margin: 0 auto;
 }
+.section-sm{
+    min-height: 100vh;
+    padding: 5rem 1rem 2rem; 
+}
 .sub-section{
     min-height: 100vh;
     padding: 10rem 1rem 2rem;
@@ -29,7 +33,7 @@ section{
   left: 0;
   width: 100%;
  z-index: 99;
- padding: 3rem 2rem !important;
+ padding: 3rem 2rem;
 background: #fff;
 box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
@@ -60,7 +64,12 @@ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 .mobile{
   display: none;
 }
-
+.display-md{
+    display: block;
+}
+.display-sm{
+    display: none;
+}
 
 
   /* meadia query */
@@ -70,6 +79,7 @@ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
     header{
       background: #fff;
+      padding: 2rem 2rem !important;
     }
     .mobile{
       display: block;
@@ -95,6 +105,12 @@ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       .nv-item a{
         display: block !important;
         margin: 1rem 0;
+    }
+    .display-sm{
+        display: block !important;
+    }
+    .display-md{
+        display: none !important;
     }
     
 }
